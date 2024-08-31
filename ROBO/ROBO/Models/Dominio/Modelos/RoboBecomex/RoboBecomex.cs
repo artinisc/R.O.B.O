@@ -1,10 +1,10 @@
 ﻿namespace ROBO.Models.Dominio
 {
-    public class RoboBecomex : CorpoHumanoide
+    public class RoboBecomex : CorpoSemiHumanoide
     {
         public readonly EnumModeloRobo Modelo;
 
-        public RoboBecomex() 
+        public RoboBecomex()
         {
             Modelo = EnumModeloRobo.Becomex;
             Nome = "Robo Becomex";

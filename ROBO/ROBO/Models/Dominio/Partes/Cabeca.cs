@@ -70,6 +70,11 @@
         #region Rotação
         public void RotacionaCabeca(EnumSentidoMovimento sentidoMovimento)
         {
+            while (Inclinacao == EnumInclinacaoCabeca.Baixo)
+            {
+                return;
+            }
+
             switch (sentidoMovimento)
             {
                 case EnumSentidoMovimento.Positivo:

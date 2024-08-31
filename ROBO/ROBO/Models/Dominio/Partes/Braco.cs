@@ -11,6 +11,36 @@
         private EnumEstadoCotovelo Cotovelo { get; set; }
         private EnumEstadoPulso Pulso { get; set; }
 
+        #region Resetar
+        public void Resetar()
+        {
+            while (Cotovelo < EnumEstadoCotovelo.FortementeContraido)
+            {
+                Cotovelo++;
+            }
+
+            while (Pulso < EnumEstadoPulso.Repouso)
+            {
+                Pulso++;
+            }
+
+            while (Pulso > EnumEstadoPulso.Repouso)
+            {
+                Pulso--;
+            }
+
+            while (Cotovelo < EnumEstadoCotovelo.Repouso)
+            {
+                Cotovelo++;
+            }
+
+            while (Cotovelo > EnumEstadoCotovelo.Repouso)
+            {
+                Cotovelo--;
+            }
+        }
+        #endregion
+
         #region Cotovelo
         public void MoveCotovelo(EnumSentidoMovimento sentidoMovimento)
         {
@@ -45,6 +75,11 @@
         #region Pulso
         public void RotacionaPulso(EnumSentidoMovimento sentidoMovimento)
         {
+            if (Cotovelo != EnumEstadoCotovelo.FortementeContraido)
+            {
+                return;
+            }
+
             switch (sentidoMovimento)
             {
                 case EnumSentidoMovimento.Positivo:

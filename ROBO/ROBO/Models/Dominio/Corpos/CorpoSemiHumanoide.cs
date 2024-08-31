@@ -1,8 +1,8 @@
 ﻿namespace ROBO.Models.Dominio
 {
-    public class CorpoHumanoide
+    public class CorpoSemiHumanoide
     {
-        public CorpoHumanoide() 
+        public CorpoSemiHumanoide()
         {
             Nome = "X";
             Cabeca = new Cabeca();
@@ -14,6 +14,15 @@
         public Cabeca Cabeca { get; set; }
         public Braco BracoDireito { get; set; }
         public Braco BracoEsquerdo { get; set; }
+
+        #region Resetar
+        public void Resetar()
+        {
+            BracoDireito.Resetar();
+            BracoEsquerdo.Resetar();
+            Cabeca.Resetar();
+        }
+        #endregion
     }
 
     public enum EnumModeloRobo

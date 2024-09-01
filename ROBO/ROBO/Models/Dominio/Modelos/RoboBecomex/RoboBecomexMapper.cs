@@ -7,7 +7,7 @@
             var roboBecomex = new RoboBecomex()
             {
                 Ativo = true,
-                Codigo = new Guid()
+                Codigo = Guid.NewGuid()
             };
 
             return roboBecomex;

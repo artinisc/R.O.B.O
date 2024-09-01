@@ -2,7 +2,7 @@
 
 namespace ROBO.Models.Aplicacao
 {
-    public class AplicControlaRoboBecomex
+    public class AplicControlaRoboBecomex : IAplicControlaRoboBecomex
     {
         private readonly IRoboBecomexMapper _iRoboBecomexMapper;
         public AplicControlaRoboBecomex(IRoboBecomexMapper iRoboBecomexMapper)
@@ -50,7 +50,7 @@ namespace ROBO.Models.Aplicacao
         #endregion
 
         #region Braços
-        public void MoveCotovelo(MovimentaBracoDTO movimentaBracoDTO)
+        public RoboBecomex MoveCotovelo(MovimentaBracoDTO movimentaBracoDTO)
         {
             switch (movimentaBracoDTO.IdentificaMembro)
             {
@@ -64,12 +64,12 @@ namespace ROBO.Models.Aplicacao
                 case EnumIdentificacaoMebro.Esquerdo:
                     movimentaBracoDTO.RoboBecomex.BracoEsquerdo.MoveCotovelo(movimentaBracoDTO.SentidoMovimento);
                     break;
-                default:
-                    return;
             }
+
+            return movimentaBracoDTO.RoboBecomex;
         }
 
-        public void RotacionaPulso(MovimentaBracoDTO movimentaBracoDTO)
+        public RoboBecomex RotacionaPulso(MovimentaBracoDTO movimentaBracoDTO)
         {
             switch (movimentaBracoDTO.IdentificaMembro)
             {
@@ -83,9 +83,9 @@ namespace ROBO.Models.Aplicacao
                 case EnumIdentificacaoMebro.Esquerdo:
                     movimentaBracoDTO.RoboBecomex.BracoEsquerdo.RotacionaPulso(movimentaBracoDTO.SentidoMovimento);
                     break;
-                default:
-                    return;
             }
+
+            return movimentaBracoDTO.RoboBecomex;
         }
         #endregion
     }

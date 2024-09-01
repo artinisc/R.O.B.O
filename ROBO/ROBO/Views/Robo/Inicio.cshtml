@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Início";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header class="text-center py-4 mb-5">
+    <h1 class="text-white-50">R.O.B.O</h1>
+</header>
+
+<main class="d-flex justify-content-center align-items-center vh-60 mb-5">
+    <button onclick="criarNovoRobo()" type="button" class="btn btn-dark btn-lg">Novo Robô</button>
+</main>
+
+<script>
+    function criarNovoRobo() {
+        fetch('/Robo/Novo')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    localStorage.setItem('robo', JSON.stringify(data.content));
+                    window.location.href = '/Robo/TelaRobo';
+                } else {
+                    alert('Erro ao criar o robô: ' + data.message);
+                }
+            })
+            .catch(error => console.error('Erro:', error));
+    }
+</script>

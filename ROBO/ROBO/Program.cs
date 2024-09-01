@@ -1,7 +1,14 @@
+using ROBO.Models.Aplicacao;
+using ROBO.Models.Dominio;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Registrar as dependências
+builder.Services.AddScoped<IRoboBecomexMapper, RoboBecomexMapper>();
+builder.Services.AddScoped<IAplicControlaRoboBecomex, AplicControlaRoboBecomex>();
 
 var app = builder.Build();
 
@@ -9,7 +16,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -20,8 +26,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//Configuração da rota padrão para iniciar no RoboController
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Robo}/{action=Inicio}/{id?}");
 
 app.Run();

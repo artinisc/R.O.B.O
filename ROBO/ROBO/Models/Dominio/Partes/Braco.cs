@@ -8,8 +8,8 @@
             Pulso = EnumEstadoPulso.Repouso;
         }
 
-        private EnumEstadoCotovelo Cotovelo { get; set; }
-        private EnumEstadoPulso Pulso { get; set; }
+        public EnumEstadoCotovelo Cotovelo { get; set; }
+        public EnumEstadoPulso Pulso { get; set; }
 
         #region Resetar
         public void Resetar()

@@ -8,8 +8,8 @@
             Rotacao = EnumRotacaoCabeca.Repouso;
         }
 
-        private EnumInclinacaoCabeca Inclinacao { get; set; }
-        private EnumRotacaoCabeca Rotacao { get; set; }
+        public EnumInclinacaoCabeca Inclinacao { get; set; }
+        public EnumRotacaoCabeca Rotacao { get; set; }
 
         #region Resetar
         public void Resetar()

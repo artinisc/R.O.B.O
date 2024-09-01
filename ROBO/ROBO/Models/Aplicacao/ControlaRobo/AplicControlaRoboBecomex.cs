@@ -43,7 +43,7 @@ namespace ROBO.Models.Aplicacao
 
         public RoboBecomex RotacionaCabeca(MovimentaCabecaDTO movimentaCabecaDTO)
         {
-            movimentaCabecaDTO.RoboBecomex.Cabeca.InclinaCabeca(movimentaCabecaDTO.SentidoMovimento);
+            movimentaCabecaDTO.RoboBecomex.Cabeca.RotacionaCabeca(movimentaCabecaDTO.SentidoMovimento);
 
             return movimentaCabecaDTO.RoboBecomex;
         }

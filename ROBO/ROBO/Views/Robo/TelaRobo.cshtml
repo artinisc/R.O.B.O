@@ -21,54 +21,67 @@
 
     <main class="text-white flex-fill d-flex flex-column align-items-center py-3 w-100">
         <div id="robo-info-cabeca" class="text-center mb-2 mx-auto w-75">
-            <div class="row mb-5">
-                <div class="col-md-2 d-flex flex-column align-items-center">
+            <div class="row mb-3">
+                <div class="col-md-3 d-flex flex-column align-items-center">
                 </div>
                 <div class="col-md-2 d-flex flex-column align-items-center">
-                    <button onclick="inclinaCabeca()" type="button" class="btn btn-secondary btn-sm mb-2">Levantar</button>
-                    <button onclick="rotacionaCabeca()" type="button" class="btn btn-secondary btn-sm">Rotacionar E.</button>
+                    <p class="mb-5"></p>
+                    <button onclick="inclinaCabeca(2)" type="button" class="btn btn-secondary btn-sm mb-4">Abaixar</button>
+                    <button onclick="rotacionaCabeca(2)" type="button" class="btn btn-secondary btn-sm">Rotacionar E.</button>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-2 text-center">
                     <h5>Cabeça</h5>
-                    <p class="mb-1"><strong>Inclinação:</strong> <span id="cabeca-inclinacao"></span></p>
-                    <p class="mb-1"><strong>Rotação:</strong> <span id="cabeca-rotacao"></span></p>
+                    <p class="mb-1"><strong>Inclinação:</strong></p>
+                    <p class="mb-3"><span id="cabeca-inclinacao"></span></p>
+                    <p class="mb-1"><strong>Rotação:</strong></p>
+                    <p class="mb-1"><span id="cabeca-rotacao"></span></p>
                 </div>
                 <div class="col-md-2 d-flex flex-column align-items-center">
-                    <button onclick="inclinaCabeca()" type="button" class="btn btn-secondary btn-sm mb-2">Abaixar</button>
-                    <button onclick="rotacionaCabeca()" type="button" class="btn btn-secondary btn-sm">Rotacionar D.</button>
+                    <p class="mb-5"></p>
+                    <button onclick="inclinaCabeca(1)" type="button" class="btn btn-secondary btn-sm mb-4">Levantar</button>
+                    <button onclick="rotacionaCabeca(1)" type="button" class="btn btn-secondary btn-sm">Rotacionar D.</button>
                 </div>
-                <div class="col-md-2 d-flex flex-column align-items-center">
+                <div class="col-md-3 d-flex flex-column align-items-center">
                 </div>
             </div>
         </div>
 
-        <div id="robo-info-bracos" class="text-center mb-5 w-75 mx-auto">
+        <div id="robo-info-bracos" class="text-center mb-4 w-75 mx-auto">
             <div class="row">
                 <div class="col-md-2 d-flex flex-column align-items-center">
-                    <button onclick="moveCotovelo()" type="button" class="btn btn-secondary btn-sm mb-2">Contrair</button>
-                    <button onclick="rotacionaPulso()" type="button" class="btn btn-secondary btn-sm">Rotacionar E.</button>
-                </div>
-                <div class="col-md-2">
-                    <h5>Braço Direito</h5>
-                    <p class="mb-1"><strong>Cotovelo:</strong> <span id="braco-direito-cotovelo"></span></p>
-                    <p class="mb-1"><strong>Pulso:</strong> <span id="braco-direito-pulso"></span></p>
-                </div>
-                <div class="col-md-2 d-flex flex-column align-items-center">
-                    <button onclick="moveCotovelo()" type="button" class="btn btn-secondary btn-sm mb-2">Repousar</button>
-                    <button onclick="rotacionaPulso()" type="button" class="btn btn-secondary btn-sm">Rotacionar D.</button>
-                </div>
-                <div class="col-md-2 d-flex flex-column align-items-center">
-                    <button onclick="moveCotovelo()" type="button" class="btn btn-secondary btn-sm mb-2">Contrair</button>
-                    <button onclick="rotacionaPulso()" type="button" class="btn btn-secondary btn-sm">Rotacionar E.</button>
+                    <p class="mb-5"></p>
+                    <button onclick="moveCotovelo(2,2)" type="button" class="btn btn-secondary btn-sm mb-4">Repousar</button>
+                    <button onclick="rotacionaPulso(2,2)" type="button" class="btn btn-secondary btn-sm">Rotacionar E.</button>
                 </div>
                 <div class="col-md-2">
                     <h5>Braço Esquerdo</h5>
-                    <p class="mb-1"><strong>Cotovelo:</strong> <span id="braco-esquerdo-cotovelo"></span></p>
-                    <p class="mb-1"><strong>Pulso:</strong> <span id="braco-esquerdo-pulso"></span></p>
+                    <p class="mb-1"><strong>Cotovelo:</strong></p>
+                    <p class="mb-3"><span id="braco-esquerdo-cotovelo"></span></p>
+                    <p class="mb-1"><strong>Pulso:</strong></p>
+                    <p class="mb-1"><span id="braco-esquerdo-pulso"></span></p>
                 </div>
                 <div class="col-md-2 d-flex flex-column align-items-center">
-                    <button onclick="moveCotovelo()" type="button" class="btn btn-secondary btn-sm mb-2">Repousar</button>
-                    <button onclick="rotacionaPulso()" type="button" class="btn btn-secondary btn-sm">Rotacionar D.</button>
+                    <p class="mb-5"></p>
+                    <button onclick="moveCotovelo(1,2)" type="button" class="btn btn-secondary btn-sm mb-4">Contrair</button>
+                    <button onclick="rotacionaPulso(1,2)" type="button" class="btn btn-secondary btn-sm">Rotacionar D.</button>
+                </div>
+
+                <div class="col-md-2 d-flex flex-column align-items-center">
+                    <p class="mb-5"></p>
+                    <button onclick="moveCotovelo(2,1)" type="button" class="btn btn-secondary btn-sm mb-4">Repousar</button>
+                    <button onclick="rotacionaPulso(2,1)" type="button" class="btn btn-secondary btn-sm">Rotacionar E.</button>
+                </div>
+                <div class="col-md-2">
+                    <h5>Braço Direito</h5>
+                    <p class="mb-1"><strong>Cotovelo:</strong></p>
+                    <p class="mb-3"><span id="braco-direito-cotovelo"></span></p>
+                    <p class="mb-1"><strong>Pulso:</strong></p>
+                    <p class="mb-1"><span id="braco-direito-pulso"></span></p>
+                </div>
+                <div class="col-md-2 d-flex flex-column align-items-center">
+                    <p class="mb-5"></p>
+                    <button onclick="moveCotovelo(1,1)" type="button" class="btn btn-secondary btn-sm mb-4">Contrair</button>
+                    <button onclick="rotacionaPulso(1,1)" type="button" class="btn btn-secondary btn-sm">Rotacionar D.</button>
                 </div>
             </div>
         </div>
@@ -95,8 +108,6 @@
             document.getElementById("nome").innerText = robo.nome;
             document.getElementById("cabeca-inclinacao").innerText = inclinacaoCabecaMap[robo.cabeca.inclinacao] || "Desconhecido";
             document.getElementById("cabeca-rotacao").innerText = rotacaoCabecaMap[robo.cabeca.rotacao] || "Desconhecido";
-
-            // Atualizando valores dos braços
             document.getElementById("braco-direito-cotovelo").innerText = estadoCotoveloMap[robo.bracoDireito.cotovelo] || "Desconhecido";
             document.getElementById("braco-direito-pulso").innerText = estadoPulsoMap[robo.bracoDireito.pulso] || "Desconhecido";
             document.getElementById("braco-esquerdo-cotovelo").innerText = estadoCotoveloMap[robo.bracoEsquerdo.cotovelo] || "Desconhecido";
@@ -119,8 +130,8 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
-                        atualizarDadosRobo(data.content); // Atualiza a interface com os dados do robô retornados
-                        localStorage.setItem('robo', JSON.stringify(data.content)); // Atualiza o armazenamento local
+                        atualizarDadosRobo(data.content);
+                        localStorage.setItem('robo', JSON.stringify(data.content));
                     } else {
                         alert('Erro ao reiniciar o robô: ' + data.message);
                     }
@@ -128,69 +139,128 @@
                 .catch(error => console.error('Erro:', error));
         }
 
-        function inclinaCabeca() {
-            const movimentaCabecaDTO = {
-                inclinacao: 1 // Exemplo de dado
-            };
+        function inclinaCabeca(sentido) {
+            const sentidoMovimento = sentido;
+
             fetch('@Url.Action("InclinaCabeca", "Robo")', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(movimentaCabecaDTO)
+                body: JSON.stringify({
+                    RoboBecomex: obterDadosRoboAtual(),
+                    SentidoMovimento: sentidoMovimento
+                })
             })
                 .then(response => response.json())
-                .then(data => atualizarDadosRobo(data.content))
-                .catch(error => console.error('Erro:', error));
+                .then(data => {
+                    if (data.success) {
+                        atualizarDadosRobo(data.content);
+                        localStorage.setItem('robo', JSON.stringify(data.content));
+                    } else {
+                        console.error("Erro ao inclinar a cabeça:", data.message);
+                    }
+                })
+                .catch(error => console.error("Erro de rede:", error));
         }
 
-        function rotacionaCabeca() {
-            const movimentaCabecaDTO = {
-                rotacao: 1 // Exemplo de dado
-            };
+        function rotacionaCabeca(sentido) {
+            const sentidoMovimento = sentido;
+
             fetch('@Url.Action("RotacionaCabeca", "Robo")', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(movimentaCabecaDTO)
+                body: JSON.stringify({
+                    RoboBecomex: obterDadosRoboAtual(),
+                    SentidoMovimento: sentidoMovimento
+                })
             })
                 .then(response => response.json())
-                .then(data => atualizarDadosRobo(data.content))
-                .catch(error => console.error('Erro:', error));
+                .then(data => {
+                    if (data.success) {
+                        atualizarDadosRobo(data.content);
+                        localStorage.setItem('robo', JSON.stringify(data.content));
+                    } else {
+                        console.error("Erro ao inclinar a cabeça:", data.message);
+                    }
+                })
+                .catch(error => console.error("Erro de rede:", error));
         }
 
-        function moveCotovelo() {
-            const movimentaBracoDTO = {
-                cotovelo: 1 // Exemplo de dado
-            };
+        function moveCotovelo(sentido, membro) {
+            const sentidoMovimento = sentido;
+            const identificaMembro = membro;
+
             fetch('@Url.Action("MoveCotovelo", "Robo")', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(movimentaBracoDTO)
+                body: JSON.stringify({
+                    RoboBecomex: obterDadosRoboAtual(),
+                    IdentificaMembro: identificaMembro,
+                    SentidoMovimento: sentidoMovimento
+                })
             })
                 .then(response => response.json())
-                .then(data => atualizarDadosRobo(data.content))
-                .catch(error => console.error('Erro:', error));
+                .then(data => {
+                    if (data.success) {
+                        atualizarDadosRobo(data.content);
+                        localStorage.setItem('robo', JSON.stringify(data.content));
+                    } else {
+                        console.error("Erro ao inclinar a cabeça:", data.message);
+                    }
+                })
+                .catch(error => console.error("Erro de rede:", error));
         }
 
-        function rotacionaPulso() {
-            const movimentaBracoDTO = {
-                pulso: 1 // Exemplo de dado
-            };
+        function rotacionaPulso(sentido, membro) {
+            const sentidoMovimento = sentido;
+            const identificaMembro = membro;
+
             fetch('@Url.Action("RotacionaPulso", "Robo")', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(movimentaBracoDTO)
+                body: JSON.stringify({
+                    RoboBecomex: obterDadosRoboAtual(),
+                    IdentificaMembro: identificaMembro,
+                    SentidoMovimento: sentidoMovimento
+                })
             })
                 .then(response => response.json())
-                .then(data => atualizarDadosRobo(data.content))
-                .catch(error => console.error('Erro:', error));
+                .then(data => {
+                    if (data.success) {
+                        atualizarDadosRobo(data.content);
+                        localStorage.setItem('robo', JSON.stringify(data.content));
+                    } else {
+                        console.error("Erro ao inclinar a cabeça:", data.message);
+                    }
+                })
+                .catch(error => console.error("Erro de rede:", error));
         }
+
+        function exibirModalAlterarNome() {
+            const modal = new bootstrap.Modal(document.getElementById('modalAlterarNome'));
+            modal.show();
+        }
+
+        const inclinacaoCabecaMap = {
+            0: "Baixo",
+            1: "Repouso",
+            2: "Cima"
+        };
+
+        const rotacaoCabecaMap = {
+            0: "-90°",
+            1: "-45°",
+            2: "Repouso",
+            3: "45°",
+            4: "90°"
+        };
 
         const estadoCotoveloMap = {
             0: "Repouso",
@@ -207,20 +277,6 @@
             4: "90°",
             5: "135°",
             6: "180°"
-        };
-
-        const inclinacaoCabecaMap = {
-            0: "Cima",
-            1: "Repouso",
-            2: "Baixo"
-        };
-
-        const rotacaoCabecaMap = {
-            0: "-90°",
-            1: "-45°",
-            2: "Repouso",
-            3: "45°",
-            4: "90°"
         };
     </script>
 </body>

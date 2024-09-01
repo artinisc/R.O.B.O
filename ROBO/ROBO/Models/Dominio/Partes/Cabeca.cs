@@ -84,7 +84,7 @@
                         return;
                     }
 
-                    Inclinacao++;
+                    Rotacao++;
 
                     break;
                 case EnumSentidoMovimento.Negativo:
@@ -94,7 +94,7 @@
                         return;
                     }
 
-                    Inclinacao--;
+                    Rotacao--;
 
                     break;
                 default:
@@ -106,9 +106,9 @@
 
     public enum EnumInclinacaoCabeca
     {
-        Cima = 0,
+        Baixo = 0,
         Repouso = 1,
-        Baixo = 2
+        Cima = 2
     }
 
     public enum EnumRotacaoCabeca

@@ -88,6 +88,7 @@
 
         <div class="text-center">
             <button onclick="resetaRobo()" type="button" class="btn btn-warning btn-sm mx-2">Reiniciar</button>
+            <button onclick="alteraNome()" type="button" class="btn btn-warning btn-sm mx-2">Alterar Nome</button>
         </div>
 
     </main>
@@ -103,6 +104,27 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAlteraNome" tabindex="-1" aria-labelledby="modalAlteraNomeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAlteraNomeLabel">Alterar Nome do Robô</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="novoNomeInput" class="form-label">Novo Nome</label>
+                        <input type="text" class="form-control" id="novoNomeInput" placeholder="Digite o novo nome">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-dark" onclick="confirmarAlteracaoNome()">Alterar Nome</button>
                 </div>
             </div>
         </div>
@@ -153,6 +175,63 @@
                         modalMensagemTexto.innerText = data.message;
                         const modal = new bootstrap.Modal(document.getElementById('modalMensagem'));
                         modal.show();
+                    }
+                })
+                .catch(error => console.error('Erro:', error));
+        }
+
+        function alteraNome() {
+            const modal = new bootstrap.Modal(document.getElementById('modalAlteraNome'));
+            modal.show();
+        }
+
+        function confirmarAlteracaoNome() {
+            const novoNome = document.getElementById("novoNomeInput").value;
+
+            if (!novoNome) {
+                const modalAlteraNome = bootstrap.Modal.getInstance(document.getElementById('modalAlteraNome'));
+                if (modalAlteraNome) {
+                    modalAlteraNome.hide();
+                }
+
+                const modalMensagemTexto = document.getElementById("modalMensagemTexto");
+                modalMensagemTexto.innerText = "O nome não pode estar vazio.";
+                const modalMensagem = new bootstrap.Modal(document.getElementById('modalMensagem'));
+                modalMensagem.show();
+                return;
+            }
+
+            const robo = obterDadosRoboAtual();
+
+            fetch('@Url.Action("NovoNome", "Robo")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    RoboBecomex: robo,
+                    NovoNome: novoNome
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        atualizarDadosRobo(data.content);
+                        localStorage.setItem('robo', JSON.stringify(data.content));
+                        const modalAlteraNome = bootstrap.Modal.getInstance(document.getElementById('modalAlteraNome'));
+                        if (modalAlteraNome) {
+                            modalAlteraNome.hide();
+                        }
+                    } else {
+                        const modalAlteraNome = bootstrap.Modal.getInstance(document.getElementById('modalAlteraNome'));
+                        if (modalAlteraNome) {
+                            modalAlteraNome.hide();
+                        }
+
+                        const modalMensagemTexto = document.getElementById("modalMensagemTexto");
+                        modalMensagemTexto.innerText = data.message;
+                        const modalMensagem = new bootstrap.Modal(document.getElementById('modalMensagem'));
+                        modalMensagem.show();
                     }
                 })
                 .catch(error => console.error('Erro:', error));
@@ -274,11 +353,6 @@
                 .catch(error => {
                     mostrarAlertaErro(error.message);
                 });
-        }
-
-        function exibirModalAlterarNome() {
-            const modal = new bootstrap.Modal(document.getElementById('modalAlterarNome'));
-            modal.show();
         }
 
         const inclinacaoCabecaMap = {

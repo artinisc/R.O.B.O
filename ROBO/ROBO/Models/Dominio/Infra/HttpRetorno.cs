@@ -2,7 +2,7 @@
 {
     public class HttpRetorno
     {
-        public HttpRetorno(bool suscesso, string mensagem, object conteudo)
+        public HttpRetorno(bool suscesso, string mensagem, object? conteudo)
         {
             Success = suscesso;
             Message = mensagem;
@@ -11,6 +11,6 @@
 
         public bool Success { get; set; }
         public string Message { get; set; }
-        public object Content { get; set; }
+        public object? Content { get; set; }
     }
 }

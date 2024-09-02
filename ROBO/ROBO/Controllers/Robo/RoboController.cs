@@ -33,7 +33,7 @@ namespace ROBO.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(new HttpRetorno(false, ex.Message, null));
             }
         }
 
@@ -47,7 +47,7 @@ namespace ROBO.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(new HttpRetorno(false, ex.Message, null));
             }
         }
 
@@ -61,7 +61,7 @@ namespace ROBO.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(new HttpRetorno(false, ex.Message, null));
             }
         }
 
@@ -75,7 +75,7 @@ namespace ROBO.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(new HttpRetorno(false, ex.Message, null));
             }
         }
 
@@ -89,7 +89,7 @@ namespace ROBO.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(new HttpRetorno(false, ex.Message, null));
             }
         }
 
@@ -103,7 +103,7 @@ namespace ROBO.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(new HttpRetorno(false, ex.Message, null));
             }
         }
 
@@ -117,7 +117,7 @@ namespace ROBO.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(new HttpRetorno(false, ex.Message, null));
             }
         }
     }

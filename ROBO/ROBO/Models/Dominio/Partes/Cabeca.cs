@@ -72,7 +72,7 @@
         {
             while (Inclinacao == EnumInclinacaoCabeca.Baixo)
             {
-                return;
+                throw new Exception("Não é possível rotacionar a cabeça com inclinação para baixo.");
             }
 
             switch (sentidoMovimento)

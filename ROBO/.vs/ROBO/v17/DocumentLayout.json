@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\views\\robo\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\views\\robo\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\views\\robo\\telarobo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\views\\robo\\telarobo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\models\\dominio\\partes\\cabeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\models\\dominio\\partes\\cabeca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\models\\dominio\\partes\\braco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\models\\dominio\\partes\\braco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\controllers\\robo\\robocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\controllers\\robo\\robocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\models\\dominio\\infra\\httpretorno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\models\\dominio\\infra\\httpretorno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\views\\robo\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\views\\robo\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +43,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ROBO\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ROBO\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T01:37:42.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cabeca.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Models\\Dominio\\Partes\\Cabeca.cs",
+              "RelativeDocumentMoniker": "ROBO\\Models\\Dominio\\Partes\\Cabeca.cs",
+              "ToolTip": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Models\\Dominio\\Partes\\Cabeca.cs",
+              "RelativeToolTip": "ROBO\\Models\\Dominio\\Partes\\Cabeca.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA3wEoAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T01:29:26.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HttpRetorno.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Models\\Dominio\\Infra\\HttpRetorno.cs",
+              "RelativeDocumentMoniker": "ROBO\\Models\\Dominio\\Infra\\HttpRetorno.cs",
+              "ToolTip": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Models\\Dominio\\Infra\\HttpRetorno.cs",
+              "RelativeToolTip": "ROBO\\Models\\Dominio\\Infra\\HttpRetorno.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T01:17:50.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoboController.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Controllers\\Robo\\RoboController.cs",
+              "RelativeDocumentMoniker": "ROBO\\Controllers\\Robo\\RoboController.cs",
+              "ToolTip": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Controllers\\Robo\\RoboController.cs",
+              "RelativeToolTip": "ROBO\\Controllers\\Robo\\RoboController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA1wCMAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T00:33:00.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Braco.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Models\\Dominio\\Partes\\Braco.cs",
+              "RelativeDocumentMoniker": "ROBO\\Models\\Dominio\\Partes\\Braco.cs",
+              "ToolTip": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Models\\Dominio\\Partes\\Braco.cs",
+              "RelativeToolTip": "ROBO\\Models\\Dominio\\Partes\\Braco.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowE8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T00:33:56.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Inicio.cshtml",
               "DocumentMoniker": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Views\\Robo\\Inicio.cshtml",
               "RelativeDocumentMoniker": "ROBO\\Views\\Robo\\Inicio.cshtml",
@@ -41,7 +126,7 @@
               "RelativeDocumentMoniker": "ROBO\\Views\\Robo\\TelaRobo.cshtml",
               "ToolTip": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Views\\Robo\\TelaRobo.cshtml",
               "RelativeToolTip": "ROBO\\Views\\Robo\\TelaRobo.cshtml",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFkAAABPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-02T00:23:00.609Z",
               "EditorCaption": ""

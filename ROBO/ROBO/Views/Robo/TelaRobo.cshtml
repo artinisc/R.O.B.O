@@ -92,6 +92,22 @@
 
     </main>
 
+    <div class="modal fade" id="modalMensagem" tabindex="-1" aria-labelledby="modalMensagemLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMensagemLabel">Mensagem</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalMensagemTexto">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -133,7 +149,10 @@
                         atualizarDadosRobo(data.content);
                         localStorage.setItem('robo', JSON.stringify(data.content));
                     } else {
-                        alert('Erro ao reiniciar o robô: ' + data.message);
+                        const modalMensagemTexto = document.getElementById("modalMensagemTexto");
+                        modalMensagemTexto.innerText = data.message;
+                        const modal = new bootstrap.Modal(document.getElementById('modalMensagem'));
+                        modal.show();
                     }
                 })
                 .catch(error => console.error('Erro:', error));
@@ -158,7 +177,10 @@
                         atualizarDadosRobo(data.content);
                         localStorage.setItem('robo', JSON.stringify(data.content));
                     } else {
-                        console.error("Erro ao inclinar a cabeça:", data.message);
+                        const modalMensagemTexto = document.getElementById("modalMensagemTexto");
+                        modalMensagemTexto.innerText = data.message;
+                        const modal = new bootstrap.Modal(document.getElementById('modalMensagem'));
+                        modal.show();
                     }
                 })
                 .catch(error => console.error("Erro de rede:", error));
@@ -183,7 +205,10 @@
                         atualizarDadosRobo(data.content);
                         localStorage.setItem('robo', JSON.stringify(data.content));
                     } else {
-                        console.error("Erro ao inclinar a cabeça:", data.message);
+                        const modalMensagemTexto = document.getElementById("modalMensagemTexto");
+                        modalMensagemTexto.innerText = data.message;
+                        const modal = new bootstrap.Modal(document.getElementById('modalMensagem'));
+                        modal.show();
                     }
                 })
                 .catch(error => console.error("Erro de rede:", error));
@@ -210,7 +235,10 @@
                         atualizarDadosRobo(data.content);
                         localStorage.setItem('robo', JSON.stringify(data.content));
                     } else {
-                        console.error("Erro ao inclinar a cabeça:", data.message);
+                        const modalMensagemTexto = document.getElementById("modalMensagemTexto");
+                        modalMensagemTexto.innerText = data.message;
+                        const modal = new bootstrap.Modal(document.getElementById('modalMensagem'));
+                        modal.show();
                     }
                 })
                 .catch(error => console.error("Erro de rede:", error));
@@ -237,10 +265,15 @@
                         atualizarDadosRobo(data.content);
                         localStorage.setItem('robo', JSON.stringify(data.content));
                     } else {
-                        console.error("Erro ao inclinar a cabeça:", data.message);
+                        const modalMensagemTexto = document.getElementById("modalMensagemTexto");
+                        modalMensagemTexto.innerText = data.message;
+                        const modal = new bootstrap.Modal(document.getElementById('modalMensagem'));
+                        modal.show();
                     }
                 })
-                .catch(error => console.error("Erro de rede:", error));
+                .catch(error => {
+                    mostrarAlertaErro(error.message);
+                });
         }
 
         function exibirModalAlterarNome() {

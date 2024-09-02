@@ -77,7 +77,7 @@
         {
             if (Cotovelo != EnumEstadoCotovelo.FortementeContraido)
             {
-                return;
+                throw new Exception("Somente é possível rotacionar o pulso com o cotovelo fortemente contraído.");
             }
 
             switch (sentidoMovimento)

@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "taTvGc5OtLc=",
+  "dgSpecHash": "tzazHc+iNmU=",
   "success": true,
-  "projectFilePath": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\mstest.testframework\\3.5.2\\mstest.testframework.3.5.2.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\xunit\\2.9.0\\xunit.2.9.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\xunit.analyzers\\1.15.0\\xunit.analyzers.1.15.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\xunit.assert\\2.9.0\\xunit.assert.2.9.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\xunit.core\\2.9.0\\xunit.core.2.9.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\xunit.extensibility.core\\2.9.0\\xunit.extensibility.core.2.9.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\xunit.extensibility.execution\\2.9.0\\xunit.extensibility.execution.2.9.0.nupkg.sha512",
+    "C:\\Users\\artini.scarabelot\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+  ],
   "logs": []
 }

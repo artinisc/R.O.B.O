@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj": {}
+    "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj": {}
   },
   "projects": {
-    "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj": {
+    "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj",
+        "projectUniqueName": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj",
         "projectName": "ROBO",
-        "projectPath": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj",
-        "packagesPath": "C:\\Users\\artin\\.nuget\\packages\\",
-        "outputPath": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\obj\\",
+        "projectPath": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO\\ROBO.csproj",
+        "packagesPath": "C:\\Users\\artini.scarabelot\\.nuget\\packages\\",
+        "outputPath": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\artin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\artini.scarabelot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +49,30 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -6,7 +6,7 @@ namespace ROBO.Models.Aplicacao
     {
         RoboBecomex Novo();
         RoboBecomex Reseta(RoboBecomex roboBecomex);
-        RoboBecomex NovoNome(NovoNomeDTO novoNomeDTO);
+        RoboBecomex Alterar(RoboBecomex roboBecomex);
         RoboBecomex InclinaCabeca(MovimentaCabecaDTO movimentaCabecaDTO);
         RoboBecomex RotacionaCabeca(MovimentaCabecaDTO movimentaCabecaDTO);
         RoboBecomex MoveCotovelo(MovimentaBracoDTO movimentaBracoDTO);

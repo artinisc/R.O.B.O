@@ -87,8 +87,10 @@
         </div>
 
         <div class="text-center">
+            <button onclick="ativaInativaRobo(true)" type="button" class="btn btn-success btn-sm mx-2">Ativar</button>
+            <button onclick="ativaInativaRobo(false)" type="button" class="btn btn-danger btn-sm mx-2">Inativar</button>
             <button onclick="resetaRobo()" type="button" class="btn btn-warning btn-sm mx-2">Reiniciar</button>
-            <button onclick="alteraNome()" type="button" class="btn btn-warning btn-sm mx-2">Alterar Nome</button>
+            <button onclick="alteraNome()" type="button" class="btn btn-light btn-sm mx-2">Alterar Nome</button>
         </div>
 
     </main>
@@ -180,6 +182,12 @@
                 .catch(error => console.error('Erro:', error));
         }
 
+        function ativaInativaRobo(estado) {
+            var robo = obterDadosRoboAtual();
+            robo.ativo = estado;
+            atualizaRobo(robo);
+        }
+
         function alteraNome() {
             const modal = new bootstrap.Modal(document.getElementById('modalAlteraNome'));
             modal.show();
@@ -201,37 +209,35 @@
                 return;
             }
 
-            const robo = obterDadosRoboAtual();
+            var robo = obterDadosRoboAtual();
+            robo.nome = novoNome;
 
-            fetch('@Url.Action("NovoNome", "Robo")', {
-                method: 'POST',
+            atualizaRobo(robo);
+
+            const modalAlteraNome = bootstrap.Modal.getInstance(document.getElementById('modalAlteraNome'));
+            if (modalAlteraNome) {
+                modalAlteraNome.hide();
+            }
+        }
+
+        function atualizaRobo(robo) {
+            fetch('@Url.Action("Alterar", "Robo")', {
+                method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
-                    RoboBecomex: robo,
-                    NovoNome: novoNome
-                })
+                body: JSON.stringify(robo)
             })
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
                         atualizarDadosRobo(data.content);
                         localStorage.setItem('robo', JSON.stringify(data.content));
-                        const modalAlteraNome = bootstrap.Modal.getInstance(document.getElementById('modalAlteraNome'));
-                        if (modalAlteraNome) {
-                            modalAlteraNome.hide();
-                        }
                     } else {
-                        const modalAlteraNome = bootstrap.Modal.getInstance(document.getElementById('modalAlteraNome'));
-                        if (modalAlteraNome) {
-                            modalAlteraNome.hide();
-                        }
-
                         const modalMensagemTexto = document.getElementById("modalMensagemTexto");
                         modalMensagemTexto.innerText = data.message;
-                        const modalMensagem = new bootstrap.Modal(document.getElementById('modalMensagem'));
-                        modalMensagem.show();
+                        const modal = new bootstrap.Modal(document.getElementById('modalMensagem'));
+                        modal.show();
                     }
                 })
                 .catch(error => console.error('Erro:', error));

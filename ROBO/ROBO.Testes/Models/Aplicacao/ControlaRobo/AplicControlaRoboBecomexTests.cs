@@ -39,17 +39,21 @@ namespace ROBO.Testes.Models.Aplicacao
         }
 
         [Fact]
-        public void NovoNome_AlteraNomeDoRobo()
+        public void Alterar_AlteraRobo()
         {
-            var novoNomeDTO = new NovoNomeDTO
+            var robo = new RoboBecomex();
+            var roboAlterar = new RoboBecomex()
             {
-                RoboBecomex = new RoboBecomex(),
-                NovoNome = "Novo Nome"
+                Nome = "Teste",
+                Ativo = false
             };
 
-            var result = _aplicControlaRoboBecomex.NovoNome(novoNomeDTO);
+            _roboBecomexMapperMock.Setup(m => m.Alterar(roboAlterar)).Returns(robo);
 
-            Assert.Equal("Novo Nome", result.Nome);
+            var result = _aplicControlaRoboBecomex.Alterar(roboAlterar);
+
+            Assert.Equal(robo.Nome, result.Nome);
+            Assert.Equal(robo.Ativo, result.Ativo);
         }
 
         [Fact]

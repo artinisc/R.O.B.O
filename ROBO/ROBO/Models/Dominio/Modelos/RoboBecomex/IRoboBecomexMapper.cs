@@ -3,5 +3,6 @@
     public interface IRoboBecomexMapper
     {
         RoboBecomex Novo();
+        RoboBecomex Alterar(RoboBecomex robo);
     }
 }

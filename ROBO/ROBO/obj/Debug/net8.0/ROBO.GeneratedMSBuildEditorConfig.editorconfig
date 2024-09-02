@@ -9,39 +9,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ROBO
 build_property.RootNamespace = ROBO
-build_property.ProjectDir = C:\Desenvolvimento\PROJETOS\R.O.B.O\ROBO\ROBO\
+build_property.ProjectDir = D:\Desenvolvimento\ROBO\R.O.B.O\ROBO\ROBO\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Desenvolvimento\PROJETOS\R.O.B.O\ROBO\ROBO
+build_property.MSBuildProjectDirectory = D:\Desenvolvimento\ROBO\R.O.B.O\ROBO\ROBO
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Desenvolvimento/PROJETOS/R.O.B.O/ROBO/ROBO/Views/Robo/Inicio.cshtml]
+[D:/Desenvolvimento/ROBO/R.O.B.O/ROBO/ROBO/Views/Robo/Inicio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9ib1xJbmljaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/PROJETOS/R.O.B.O/ROBO/ROBO/Views/Robo/TelaRobo.cshtml]
+[D:/Desenvolvimento/ROBO/R.O.B.O/ROBO/ROBO/Views/Robo/TelaRobo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9ib1xUZWxhUm9iby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/PROJETOS/R.O.B.O/ROBO/ROBO/Views/Shared/Error.cshtml]
+[D:/Desenvolvimento/ROBO/R.O.B.O/ROBO/ROBO/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/PROJETOS/R.O.B.O/ROBO/ROBO/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Desenvolvimento/ROBO/R.O.B.O/ROBO/ROBO/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/PROJETOS/R.O.B.O/ROBO/ROBO/Views/_ViewImports.cshtml]
+[D:/Desenvolvimento/ROBO/R.O.B.O/ROBO/ROBO/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/PROJETOS/R.O.B.O/ROBO/ROBO/Views/_ViewStart.cshtml]
+[D:/Desenvolvimento/ROBO/R.O.B.O/ROBO/ROBO/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/PROJETOS/R.O.B.O/ROBO/ROBO/Views/Shared/_Layout.cshtml]
+[D:/Desenvolvimento/ROBO/R.O.B.O/ROBO/ROBO/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7df4x8uvsq

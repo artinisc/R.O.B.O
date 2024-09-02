@@ -60,9 +60,9 @@ namespace ROBO.Testes.Models.Dominio
                 Pulso = EnumEstadoPulso.Repouso
             };
 
-            braco.RotacionaPulso(EnumSentidoMovimento.Positivo);
+            var exception = Assert.Throws<Exception>(() => braco.RotacionaPulso(EnumSentidoMovimento.Positivo));
 
-            Assert.Equal(EnumEstadoPulso.Repouso, braco.Pulso);
+            Assert.Equal("Somente é possível rotacionar o pulso com o cotovelo fortemente contraído.", exception.Message);
         }
     }
 }

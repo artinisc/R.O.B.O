@@ -60,9 +60,9 @@ namespace ROBO.Testes.Models.Dominio.Partes
                 Rotacao = EnumRotacaoCabeca.Repouso
             };
 
-            cabeca.RotacionaCabeca(EnumSentidoMovimento.Positivo);
+            var exception = Assert.Throws<Exception>(() => cabeca.RotacionaCabeca(EnumSentidoMovimento.Positivo));
 
-            Assert.Equal(EnumRotacaoCabeca.Repouso, cabeca.Rotacao);
+            Assert.Equal("Não é possível rotacionar a cabeça com inclinação para baixo.", exception.Message);
         }
     }
 }

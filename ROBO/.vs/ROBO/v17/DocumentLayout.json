@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\",
+  "WorkspaceRootPath": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\views\\robo\\telarobo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\views\\robo\\telarobo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4B678DD7-2D71-4433-AFF4-479018DAA674}|ROBO.Testes\\ROBO.Testes.csproj|d:\\desenvolvimento\\robo\\r.o.b.o\\robo\\robo.testes\\controllers\\robo\\robocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B678DD7-2D71-4433-AFF4-479018DAA674}|ROBO.Testes\\ROBO.Testes.csproj|solutionrelative:robo.testes\\controllers\\robo\\robocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|c:\\desenvolvimento\\projetos\\r.o.b.o\\robo\\robo\\controllers\\robo\\robocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B678DD7-2D71-4433-AFF4-479018DAA674}|ROBO.Testes\\ROBO.Testes.csproj|d:\\desenvolvimento\\robo\\r.o.b.o\\robo\\robo.testes\\models\\dominio\\partes\\cabecatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B678DD7-2D71-4433-AFF4-479018DAA674}|ROBO.Testes\\ROBO.Testes.csproj|solutionrelative:robo.testes\\models\\dominio\\partes\\cabecatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|d:\\desenvolvimento\\robo\\r.o.b.o\\robo\\robo\\controllers\\robo\\robocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CE69C01-407D-4718-B571-A0EAB8676C36}|ROBO\\ROBO.csproj|solutionrelative:robo\\controllers\\robo\\robocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B678DD7-2D71-4433-AFF4-479018DAA674}|ROBO.Testes\\ROBO.Testes.csproj|d:\\desenvolvimento\\robo\\r.o.b.o\\robo\\robo.testes\\models\\aplicacao\\controlarobo\\apliccontrolarobobecomextests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B678DD7-2D71-4433-AFF4-479018DAA674}|ROBO.Testes\\ROBO.Testes.csproj|solutionrelative:robo.testes\\models\\aplicacao\\controlarobo\\apliccontrolarobobecomextests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B678DD7-2D71-4433-AFF4-479018DAA674}|ROBO.Testes\\ROBO.Testes.csproj|d:\\desenvolvimento\\robo\\r.o.b.o\\robo\\robo.testes\\models\\dominio\\partes\\bracotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B678DD7-2D71-4433-AFF4-479018DAA674}|ROBO.Testes\\ROBO.Testes.csproj|solutionrelative:robo.testes\\models\\dominio\\partes\\bracotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +30,148 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 21,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoboController.cs",
+              "DocumentMoniker": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO\\Controllers\\Robo\\RoboController.cs",
+              "RelativeDocumentMoniker": "ROBO\\Controllers\\Robo\\RoboController.cs",
+              "ToolTip": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO\\Controllers\\Robo\\RoboController.cs",
+              "RelativeToolTip": "ROBO\\Controllers\\Robo\\RoboController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwDoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T13:27:17.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BracoTests.cs",
+              "DocumentMoniker": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO.Testes\\Models\\Dominio\\Partes\\BracoTests.cs",
+              "RelativeDocumentMoniker": "ROBO.Testes\\Models\\Dominio\\Partes\\BracoTests.cs",
+              "ToolTip": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO.Testes\\Models\\Dominio\\Partes\\BracoTests.cs",
+              "RelativeToolTip": "ROBO.Testes\\Models\\Dominio\\Partes\\BracoTests.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T13:25:20.339Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RoboController.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Controllers\\Robo\\RoboController.cs",
-              "RelativeDocumentMoniker": "ROBO\\Controllers\\Robo\\RoboController.cs",
-              "ToolTip": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Controllers\\Robo\\RoboController.cs",
-              "RelativeToolTip": "ROBO\\Controllers\\Robo\\RoboController.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAywEIAAAAAAAAA",
+              "Title": "CabecaTests.cs",
+              "DocumentMoniker": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO.Testes\\Models\\Dominio\\Partes\\CabecaTests.cs",
+              "RelativeDocumentMoniker": "ROBO.Testes\\Models\\Dominio\\Partes\\CabecaTests.cs",
+              "ToolTip": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO.Testes\\Models\\Dominio\\Partes\\CabecaTests.cs",
+              "RelativeToolTip": "ROBO.Testes\\Models\\Dominio\\Partes\\CabecaTests.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T00:33:00.554Z",
+              "WhenOpened": "2024-09-02T13:21:27.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AplicControlaRoboBecomexTests.cs",
+              "DocumentMoniker": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO.Testes\\Models\\Aplicacao\\ControlaRobo\\AplicControlaRoboBecomexTests.cs",
+              "RelativeDocumentMoniker": "ROBO.Testes\\Models\\Aplicacao\\ControlaRobo\\AplicControlaRoboBecomexTests.cs",
+              "ToolTip": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO.Testes\\Models\\Aplicacao\\ControlaRobo\\AplicControlaRoboBecomexTests.cs",
+              "RelativeToolTip": "ROBO.Testes\\Models\\Aplicacao\\ControlaRobo\\AplicControlaRoboBecomexTests.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwDQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T13:20:04.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TelaRobo.cshtml",
-              "DocumentMoniker": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Views\\Robo\\TelaRobo.cshtml",
-              "RelativeDocumentMoniker": "ROBO\\Views\\Robo\\TelaRobo.cshtml",
-              "ToolTip": "C:\\Desenvolvimento\\PROJETOS\\R.O.B.O\\ROBO\\ROBO\\Views\\Robo\\TelaRobo.cshtml",
-              "RelativeToolTip": "ROBO\\Views\\Robo\\TelaRobo.cshtml",
-              "ViewState": "AQIAANIAAAAAAAAAAAAAAOUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T00:23:00.609Z",
+              "Title": "RoboControllerTests.cs",
+              "DocumentMoniker": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO.Testes\\Controllers\\Robo\\RoboControllerTests.cs",
+              "RelativeDocumentMoniker": "ROBO.Testes\\Controllers\\Robo\\RoboControllerTests.cs",
+              "ToolTip": "D:\\Desenvolvimento\\ROBO\\R.O.B.O\\ROBO\\ROBO.Testes\\Controllers\\Robo\\RoboControllerTests.cs",
+              "RelativeToolTip": "ROBO.Testes\\Controllers\\Robo\\RoboControllerTests.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAwwEQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T13:19:58.387Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             }
           ]
         }

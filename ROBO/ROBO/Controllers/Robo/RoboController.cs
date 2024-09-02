@@ -51,13 +51,13 @@ namespace ROBO.Controllers
             }
         }
 
-        [HttpPost]
-        public IActionResult NovoNome([FromBody] NovoNomeDTO novoNomeDTO)
+        [HttpPut]
+        public IActionResult Alterar([FromBody] RoboBecomex roboBecomex)
         {
             try
             {
-                var robo = _aplicControlaRoboBecomex.NovoNome(novoNomeDTO);
-                return Ok(new HttpRetorno(true, "Nome alterado com sucesso.", robo));
+                var robo = _aplicControlaRoboBecomex.Alterar(roboBecomex);
+                return Ok(new HttpRetorno(true, "Robo Atualizado com sucesso.", robo));
             }
             catch (Exception ex)
             {

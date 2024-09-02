@@ -59,19 +59,23 @@ namespace ROBO.Testes.Controllers
         }
 
         [Fact]
-        public void NovoNome_Consistente()
+        public void Alterar_Consistente()
         {
-            var novoNomeDTO = new NovoNomeDTO { NovoNome = "NovoNome" };
-            var roboAtualizado = new RoboBecomex { Nome = "NomeAntigo" };
+            var robo = new RoboBecomex();
+            var roboAlterado = new RoboBecomex()
+            {
+                Nome = "Teste",
+                Ativo = false
+            };
 
-            _mockAplicControlaRobo.Setup(x => x.NovoNome(novoNomeDTO)).Returns(roboAtualizado);
+            _mockAplicControlaRobo.Setup(x => x.Alterar(roboAlterado)).Returns(robo);
 
-            var result = _controller.NovoNome(novoNomeDTO);
+            var result = _controller.Alterar(roboAlterado);
 
             var okResult = Assert.IsType<OkObjectResult>(result);
             var retorno = Assert.IsType<HttpRetorno>(okResult.Value);
             Assert.True(retorno.Success);
-            Assert.Equal(roboAtualizado, retorno.Content);
+            Assert.Equal(robo, retorno.Content);
         }
 
         [Fact]

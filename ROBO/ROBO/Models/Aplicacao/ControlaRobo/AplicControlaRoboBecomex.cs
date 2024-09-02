@@ -25,11 +25,11 @@ namespace ROBO.Models.Aplicacao
             return roboBecomex;
         }
 
-        public RoboBecomex NovoNome(NovoNomeDTO novoNomeDTO)
+        public RoboBecomex Alterar(RoboBecomex roboBecomex)
         {
-            novoNomeDTO.RoboBecomex.Nome = novoNomeDTO.NovoNome;
+            var roboBecomexAlterado = _iRoboBecomexMapper.Alterar(roboBecomex);
 
-            return novoNomeDTO.RoboBecomex;
+            return roboBecomexAlterado;
         }
         #endregion
 
